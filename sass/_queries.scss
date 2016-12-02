@@ -1,0 +1,20 @@
+@import "mixins";
+@import "variables";
+
+@mixin large-desktop($width) {
+  @media all and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin desktop($start-width, $end-width) {
+  @media all and (min-width: $start-width) and (max-width: $end-width){
+    @content;
+  }
+}
+
+@mixin tablet($start-width, $end-width){
+  @media all and (min-width: $start-width) and (max-width: $end-width) {
+    @content;
+  }
+}

@@ -1,0 +1,18 @@
+
+@mixin font-padding($font, $padd, $color:null){
+  font-size: $font;
+  padding: $padd;
+  color: $color;
+}
+
+@mixin bgc-color($bgc, $font-color){
+  background-color: $bgc;
+  color: $font-color
+}
+
+@mixin header-nav {
+  position: static;
+  clear:both;
+  width: 100%;
+  padding: 0;
+}
